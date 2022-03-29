@@ -19,6 +19,7 @@
         >Listen and repeat sound
       </f7-button>
 
+
       <p>
         Second approach - save audio and press play (uses MediaRecorder on PC
         and Cordova plugin audioInput on phone):
@@ -44,7 +45,7 @@
         Fourth approach - plays audio immediately (uses cordova-plugin-media):
       </p>
       <f7-button large small fill @click="getAudioCordovaPluginMedia()"
-        >Record with getUserMedia
+        >Record with cordova-plugin-media
       </f7-button>
     </div>
   </f7-page>
