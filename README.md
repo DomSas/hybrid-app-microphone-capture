@@ -1,17 +1,26 @@
-# Framework7-Vue3-Minimal Template
+# Hybrid App Microphone Capture
+
+This is a test project to determine which approach of capturing the audio from microphone can work on PC, Android and iOS.
+
+## Findings
+It seems that the navigator.mediaDevices.getUserMedia works on Android 9, but on iOS 14 and 15 does not. 
+
+Other approaches (Cordova plugin audioInput or Cordova plugin media) might work for iOS, but I could not locate where the app could be saving the recordings.
 
 ## Start Project
 
 Run `monaca preview` to preview the app.
 
-## WebPack
+---
+
+### WebPack
 
 There is a webpack bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Webpack config located in `script/webpack.config.js`.
 
 Webpack has specific way of handling static assets (CSS files, images, audios). You can learn more about correct way of doing things on [official webpack documentation](https://webpack.js.org/guides/asset-management/).
 
 
-## Documentation & Resources
+### Documentation & Resources
 
 * [Framework7 Core Documentation](https://framework7.io/docs/)
 * [Framework7 Vue Documentation](https://framework7.io/vue/)
